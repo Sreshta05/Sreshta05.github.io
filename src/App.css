@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply text-lg
+}
+
+.projects img {
+    width: 100%;
+}
+
+/* color */
+/*.bg-primary {
+    background: #ebeec5;
+}
+*/
+
+
+/* Add this CSS to your stylesheet */
+.btn {
+    display: inline-block;
+    background-color: #41a5cc;
+    color: #ffffff;
+    border-color: #cfd151;
+    padding: 8px 24px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: transparent;
+    color: #cfd151;
+    border-color: #41a5cc;
+  }
+  
+
+
+.text-accent {
+    color: #d6ce58;
+}
+
+.nav-link {
+    color: #d6ce5d; /* Yellow color */
+  }
+  
+nav li a {
+    @apply px-4 py-5 text-lg;
+}
+
+nav li a:hover {
+    color: #1d5f5c;
+}
+
+.mobile-nav {
+    @apply block md:hidden fixed top-10 py-2 w-full h-full bg-gray-900 duration-500;
+}
+
+
+/* hero */
+h1 {
+    font-family: 'Abril Fatface';
+    line-height: 1.5 !important;
+}
+
+.bg-primary-translucent {
+    background: rgba(0, 0, 0, 0.8); /* Adjust the alpha value (0.8) for the desired transparency */
+  }
+  
+
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-out;
+  }
+  
